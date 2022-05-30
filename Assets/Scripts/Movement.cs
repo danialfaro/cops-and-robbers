@@ -22,7 +22,8 @@ public class Movement : MonoBehaviour
 
         Tile next = tile;
         while (next != null)
-        {            
+        {
+            Debug.Log(next);
             path.Push(next);
             next = next.parent;
         }
